@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="362.268" tests="5" skipped="0" failures="1" errors="0">
+<testcase classname="User profile functionalities for a user" name="To validate Edit Intro functionality" time="75.832">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&quot;Mumbai, Maharashtra, India&quot;]&quot;}
+  (Session info: chrome=123.0.6312.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e80325a7e49e630d8f9fc480f711115, findElement {value=//span[text()=&quot;Mumbai, Maharashtra, India&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55555/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e80325a7e49e630d8f9fc480f711115">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="Mumbai, Maharashtra, India"]"}
+  (Session info: chrome=123.0.6312.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e80325a7e49e630d8f9fc480f711115, findElement {value=//span[text()="Mumbai, Maharashtra, India"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55555/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e80325a7e49e630d8f9fc480f711115
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getText(Unknown Source)
+	at PageFactory.UserPageFactory.introSug(UserPageFactory.java:135)
+	at StepDefinition.UserStepDefinition.changes_should_get_saved(UserStepDefinition.java:64)
+	at ✽.changes should get saved(file:///C:/Users/ANIKAJOS/Desktop/Sprint2/Userprofile/src/test/resource/Features/UserProfile.feature:14)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User is logged in and on View Profile page............................passed
+When User clicks on Edit Intro button.......................................passed
+And enters Industry and City................................................passed
+And clicks on Save..........................................................passed
+Then changes should get saved...............................................failed
+]]></system-out>
+</testcase>
+<testcase classname="User profile functionalities for a user" name="To validate Add Skill option functionality - Example #1.1" time="97.425">
+<system-out><![CDATA[
+Given User is logged in and on View Profile page............................passed
+When User clicks on Add Skill option........................................passed
+And enters the "Java".......................................................passed
+And clicks on the Save button...............................................passed
+Then Skill should be added..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User profile functionalities for a user" name="To validate Add Experience functionality" time="65.229">
+<system-out><![CDATA[
+Given User is logged in and on View Profile page............................passed
+When User clicks on Add Experience option...................................passed
+And enters Title, Company Name, Start Month, and Start Year.................passed
+And clicks on Save option...................................................passed
+Then Experience should be saved and displayed...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User profile functionalities for a user" name="To validate Create a Post functionality" time="57.376">
+<system-out><![CDATA[
+Given User is logged in and on View Profile page............................passed
+When User clicks on Create a Post option....................................passed
+And enters Details of their Post............................................passed
+And clicks on Post option...................................................passed
+Then that Post should be displayed..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User profile functionalities for a user" name="To validate Edit Contact info functionality" time="65.97">
+<system-out><![CDATA[
+Given User is logged in and on View Profile page............................passed
+When User clicks on Contact Info and clicks on Edit button..................passed
+And enters Phone Number, Phone Type, Address, Birth Month, and Birth Date...passed
+And clicks on Save button...................................................passed
+Then changes should not get saved...........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
